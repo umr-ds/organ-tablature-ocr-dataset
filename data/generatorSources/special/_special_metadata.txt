@@ -1,0 +1,7 @@
+#id:offsetBot,offsetSide,weight
+rep:35,2,6
+t2-2:15,2,2
+t3-2:15,2,2
+t4-4:15,2,1
+m:0,0,100
+t:0,3,3

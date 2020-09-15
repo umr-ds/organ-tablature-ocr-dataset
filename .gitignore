@@ -1,0 +1,9 @@
+src/**/__pycache__/
+.ipynb_checkpoints/
+.idea/
+data/**/testSetA/**/
+data/**/trainSetA/**/
+data/**/validationSetA/**/
+data/**/testSet/**/
+data/**/trainSet/**/
+data/**/validationSet/**/
