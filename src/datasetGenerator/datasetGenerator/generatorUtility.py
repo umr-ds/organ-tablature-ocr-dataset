@@ -202,16 +202,17 @@ def split_image_to_voices_with_given_center(image: Image.Image, image_height: Tu
 
 
 def download_source_images(data_url: str, data_size: int,
-                           data_output_path: str = "../data",
-                           data_zip_path: str = "../data/realdataSources/data.zip") -> None:
+                           data_zip_path: str, data_output_path: str = "../data",
+                           delete_zip_file: bool = True) -> None:
     """
     Downloads a zip file with source images from a specified url and extracts it to the data folder
 
     # Arguments
         data_url: str. the url to download the zip file from
         data_size: int. the size of the file to download (needed for download progress bar)
-        data_output_path: str. the directory to extract the archive to
         data_zip_path: str. the path to save the downloaded zip archive at
+        data_output_path: str. the directory to extract the archive to
+        delete_zip_file: bool. indicates whether the zip file shall be deleted after extraction
     """
 
     data_zip_folder = os.path.split(data_zip_path)[0]
@@ -240,6 +241,9 @@ def download_source_images(data_url: str, data_size: int,
         z.extractall(data_output_path)
 
     print("Extraction complete")
+
+    if delete_zip_file:
+        os.remove(data_zip_path)
 
 
 def display_progress(current: int, total: int, unit: Tuple[str, int, int],

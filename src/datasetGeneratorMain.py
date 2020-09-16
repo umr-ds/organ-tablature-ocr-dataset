@@ -30,7 +30,8 @@ def generate_dataset(input_folder: str, output_folder: str,
     # defaults
     width = (1900, 2000)    # min and max width
     height = (128, 140)     # min and max height
-    gt = "simple"           # 'simple': label-string, 'boxfile': bounding boxes, 'boxDisplay': bounding boxes + visualization during creation
+    gt = "simple"           # 'simple': label-string, 'boxfile': bounding boxes (may lead to errors with augmentation),
+                            # 'boxDisplay': bounding boxes + visualization during creation
     num_of_voices = 4       #
 
     empty_measure_chance = 3                # 1 in x chance
