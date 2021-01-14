@@ -1,22 +1,22 @@
-# Organ Tablature OCR Dataset
+# Organ Tablature OCR Data Set
 
-This repository provides the organ tablature ocr data set used in the paper `Recognition of Organ Tablature Music Notation with Deep Neural Networks`.
+This repository provides the organ tablature ocr data set used in the paper `Automatic Transcription of Organ Tablature Music Notation with Deep Neural Networks`.
 The data set consists of a training, validation and testing subset.
 
 
-### Data Sources
+## Data Sources
 The data consists on the one hand of real tablature staves extracted from the scans of two organ tablature books: 
 * "Orgel oder Instrument Tabulaturbuch" (’Organ or InstrumentTablature Book’) from 1583 
-* "Ein  new künstlich Tabulaturbuch" (’A new artificial tablaturebook’)  from  1575 
+* "Ein new künstlich Tabulaturbuch" (’A new artificial tablaturebook’) from  1575 
 
 Both books were written by German Organist and Composer Elias Nikolaus Ammerbach.
-1,200 staves from each book were manually annotated with label sequences. 
+1200 staves from each book were manually annotated with label sequences. 
 
 On the other hand the data set is made up of artificially generated tablatures that were produced by a data generator.
 
 
-### Data Generator
-The whole data set requires almost 300GB of disc space, which is why instead of the whole data set the random data generator is distributed along with the required source images.
+## Data Generator
+The whole data set requires almost 90GB of disc space, which is why instead of the whole data set we distribute the generator along with the required source images.
 The annotated real tablature staves are made available in a cloud storage and can be downloaded from there.
 
 The `datasets.ipynb` ipython notebook is provided for building the data set locally.
