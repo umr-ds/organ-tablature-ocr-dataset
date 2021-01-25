@@ -10,13 +10,13 @@ The data consists on the one hand of real tablature staves extracted from the sc
 * "Ein new künstlich Tabulaturbuch" (’A new artificial tablaturebook’) from  1575 
 
 Both books were written by German Organist and Composer Elias Nikolaus Ammerbach.
-1200 staves from each book were manually annotated with label sequences. 
+We manually annotated 1200 staves from each book with label sequences. 
 
-On the other hand the data set is made up of artificially generated tablatures that were produced by a data generator.
+To increase the amount of available data we employed data augmentation and a synthetic data generator that randomly arranges images of single characters into tablature rows.
 
 
-## Data Generator
-The whole data set requires almost 90GB of disc space, which is why instead of the whole data set we distribute the generator along with the required source images.
+## Data Set Creation
+The whole data set requires almost 90GB of disc space, which is why instead of the whole data set we distribute our generation and augmentation tools along with the required source images.
 The annotated real tablature staves are made available in a cloud storage and can be downloaded from there.
 
 The `datasets.ipynb` ipython notebook is provided for building the data set locally.
