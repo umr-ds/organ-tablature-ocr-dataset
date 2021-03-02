@@ -1,6 +1,6 @@
 # Organ Tablature OCR Data Set
 
-This repository provides the organ tablature ocr data set used in the paper `Automatic Transcription of Organ Tablature Music Notation with Deep Neural Networks`.
+This repository provides the organ tablature ocr data set used in the paper **Automatic Transcription of Organ Tablature Music Notation with Deep Neural Networks** published in *Transactions of the International Society for Music Information Retrieval* 4(1) in 2021 ([!http://doi.org/10.5334/tismir.77]).
 The data set consists of a training, validation and testing subset.
 
 
