@@ -21,8 +21,8 @@ def download_dataset(zip_path: str, output_path: str, delete_zip_file: bool = Tr
         delete_zip_file: bool. indicates whether the zip file shall be deleted after extraction
     """
 
-    url = "https://box.uni-marburg.de/index.php/s/MENZtcfuWDeDHi8/download"
-    data_size = 770034652  # for progress bar visualization only
+    url = "https://hessenbox.uni-marburg.de/dl/fiJRsttbsoNc575aRgGEZF/Dataset_2021/realdataSources.zip"
+    data_size = 768248154  # for progress bar visualization only
 
     download_source_images(url, data_size, zip_path, output_path, delete_zip_file)
 
